@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vault-Based Seed Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>T-Cracker</h1>
+
+        <div class="input-section">
+            <textarea id="inputText" placeholder="Enter your secret text here..."></textarea>
+            <button onclick="generateLocationCode()">Generate Code</button>
+        </div>
+
+        <div class="result">
+            <p id="locationCode"></p>
+        </div>
+
+        <div class="decode-section">
+            <input type="text" id="decodeInput" placeholder="Enter location code to retrieve">
+            <button onclick="retrieveText()">Retrieve Text</button>
+        </div>
+
+        <!-- Fake Log Section -->
+        <div id="loadingLogs"></div>
+
+        <!-- Final Retrieved Text Output -->
+        <div id="retrievedText"></div>
+
+        <!-- Hidden Easter Egg Message -->
+        <div class="hidden-message" id="hiddenMessage"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
